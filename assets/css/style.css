@@ -2,7 +2,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #4e4888;
-  
+  background-image: url();
   
 }
 
@@ -538,7 +538,7 @@ margin: 1em;
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 10px 0;
   overflow: hidden;
 }
 
