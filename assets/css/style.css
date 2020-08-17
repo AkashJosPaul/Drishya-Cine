@@ -4,7 +4,7 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #4e4888;
   background-image: url();
-  
+  background: rgb(51 106 131);
 }
 
 a {
@@ -16,9 +16,13 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
-  color: #121d24;
+  color: #fff;
+}
+h3{
+  font-family: "Raleway", sans-serif;
+  color: #ff4a17;
 }
 
 /*--------------------------------------------------------------
@@ -579,8 +583,7 @@ section {
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #263d4d;
-}
+  color: #958228;}
 
 /*--------------------------------------------------------------
 # About
@@ -1304,9 +1307,9 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact .info-box {
-  color: #444444;
+  color: #f1e9e9;
   text-align: center;
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.1);
   padding: 20px 0 30px 0;
 }
 
@@ -1319,7 +1322,7 @@ section {
 
 .contact .info-box h3 {
   font-size: 20px;
-  color: #777777;
+  
   font-weight: 700;
   margin: 10px 0;
 }
@@ -1332,7 +1335,7 @@ section {
 }
 
 .contact .php-email-form {
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.1);
   padding: 60px;
 }
 
