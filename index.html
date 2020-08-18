@@ -389,7 +389,7 @@
         </div>
 
         <div class="col-lg-6 mt-4 mt-lg-0">
-          <form action="" method="post" role="form" class="php-email-form">
+          <form id="submit-form" action=""  role="form">
             <div class="form-row">
               <div class="col-md-5 form-group">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -513,7 +513,25 @@
 
   <!--  Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    $("#submit-form").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbxMzHtkZkXKJoDeOwHTzUsMAX1fsYJKIvM7Xqyu/exec",
+            data:$("#submit-form").serialize(),
+            method:"post",
+            success:function (response){
+                alert("Form submitted successfully")
+                window.location.reload()
+                //window.location.href="https://google.com"
+            },
+            error:function (err){
+                alert("Something Error")
 
+            }
+        })
+    })
+</script> 
 </body>
 
 </html>
